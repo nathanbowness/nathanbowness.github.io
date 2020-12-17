@@ -1,12 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><title>COMP-5704 Nathan Bowness</title>
-
-
   
-
-  
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head><body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#000000" link="#000000" vlink="#000000">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head><body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#000000" link="#000000" vlink="#000000">
 <table border="0" width="100%">
 
   <tbody>
@@ -28,24 +23,23 @@
 </table>
 
 <hr noshade="noshade">
-<h2><font color="#005128">Project Title: </font><font><font color="#005128">Parallel Algorithms for Centrality in Dynamic Graphs</font></font></h2>
-
+<h2><font color="#005128">Project Title: </font><font><font color="#005128">Betweenness Centrality in Dynamic Graphs</font></font></h2>
 <h2><font><font color="#005128">Name: Nathan Bowness</font></font></h2>
-
 <h2><font><font color="#005128">E-Mail: nbown088@uottawa.ca</font></font></h2>
 
 
 <hr noshade="noshade">
 <b><font color="#005128">Project Outline:</font></b><br>
-Measuring the centrality of nodes in graphs has become a research topic with many applications including 
-analyzing social, internet, and transportation networks. 
-  
-Part of the research encompasses recomputing centrality for nodes after an update to the graph. 
-  
-For this project, I will be covering some graph theory but will mainly be focussing on recent parallel algorithms
-for updating centrality in dynamic graphs.
+Measuring the betweenness centrality of nodes in a graph is a research topic with many applications including 
+analyzing social, internet, and transportation networks.
 
-I hope to implement the algorithm designed by Skula et al. on a multi-core CPU and test the algorithm&#146s performance on additional graph sets.
+This research encompasses recomputing betweennes centrality on dynamic graphs where edges are constantly being added and removed. 
+  
+For this project, I will be covering some graph theory but will be focussing on recent parallel algorithms
+for updating betweenness centrality in dynamic graphs.
+
+I will implement an algorithm designed by Skula et al. that proposes a new batch update algorithm for recomputing betwennes centrality with improved performance over other approaches.  
+The algorithm will be implemented on a multi-core CPU and I hope test it&#146s performance on additional graph sets to verify the original findings.
 
 <p><b><font color="#005128">Startup Paper(s):</font></b> 
   <a href="https://dl.acm.org/doi/abs/10.1145/3392717.3392743">Efficient Parallel Algorithms for Betweenness- and Closeness-Centrality in Dynamic Graphs</a>
@@ -55,27 +49,32 @@ I hope to implement the algorithm designed by Skula et al. on a multi-core CPU a
 <p><b><font color="#005128">Deliverables:</font></b></p>
 <ul>
   <li>
-    <div align="left"><a href="Literature_Review_Oct_18th.pdf"><font color="#000000">Literature Review</font></a></div>	
+    <div align="left"><a href="Literature_Review_Final.pdf"><font color="#000000">Literature Review</font></a></div>	
   </li>
   <li>
     <div align="left"><a href="Presentation_Outline.pdf"><font color="#000000">Presentation Outline</font></a></div>	
   </li>
   <li>
-    <div align="left"><a href="BC_Final_Presentation_Nathan_Bowness.pdf"><font color="#000000">Final Presentation [PDF]</font></a></div>	
+    <div align="left">
+      <a href="BC_Final_Presentation_Nathan_Bowness_Final.pdf"><font color="#000000">Final Presentation [PDF]</font></a>
+    </div>	
   </li>
 </ul>
 
 <p><b><font color="#005128">Relevant References:</font></b></p>
 
 <ul>
-  <li><a href="https://ieeexplore.ieee.org/abstract/document/8070346">Parallel Algorithm for Incremental Betweenness Centrality on Large Graphs</a></li>
+  <li> <a href="https://dl.acm.org/doi/abs/10.1145/3392717.3392743">Efficient Parallel Algorithms for Betweenness- and Closeness-Centrality in Dynamic Graphs</a></li>
   <li><a href="https://ieeexplore.ieee.org/document/8070346">Parallel Algorithm for Incremental Betweenness Centrality on Large Graphs</a></li>
-
-
-  <li><a href="https://ieeexplore.ieee.org/document/6702680">STREAMER: A distributed framework for incremental closeness centrality computation</a></li>
-
-
   <li><a href="https://www.tandfonline.com/doi/abs/10.1080/0022250X.2001.9990249">A faster algorithm for betweenness centrality</a></li>
+  <li><a href="https://www.jstor.org/stable/3033543?seq=1#metadata_info_tab_contents">A Set of Measures of Centrality Based on Betweenness</a></li>
+  <li><a href="https://ieeexplore.ieee.org/document/6406265">A Fast Algorithm for Streaming Betweenness Centrality</a></li>
+  <li><a href="https://ieeexplore.ieee.org/document/7498421">Scalable online betweenness centrality in evolving graphs</a></li>
+  <li><a href="https://www.researchgate.net/profile/Vatche_Isahagian/publication/263201045_A_Divide-and-Conquer_Algorithm_for_Betweenness_Centrality/links/54b7d93e0cf2c27adc4733cf/A-Divide-and-Conquer-Algorithm-for-Betweenness-Centrality.pdf">A Divide-and-Conquer Algorithm for Betweenness Centrality</a></li>
+  <li><a href="https://ieeexplore.ieee.org/document/5161100">A faster parallel algorithm and efficient multithreaded implementations..</a></li>
+  <li><a href="https://ieeexplore.ieee.org/document/1690659">Parallel Algorithms for Evaluating Centrality Indices in Real-world Network</a></li>
+  <li><a href="https://ieeexplore.ieee.org/document/7498421">Scalable online betweenness centrality in evolving graphs</a></li>
+  <li><a href="https://www.researchgate.net/publication/320213267_Significance_of_Parallel_Computation_over_Serial_Computation_Using_OpenMP_MPI_and_CUDA">Significance of Parallel Computation over Serial Computation Using OpenMP, MPI</a></li>
   <li><a href="https://ir.cwi.nl/pub/9791">A rush in a directed graph</a></li>
 
 </ul>
